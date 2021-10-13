@@ -1,0 +1,3 @@
+ca-certs/*.example
+service-certs/*.example
+service-keys/*.example

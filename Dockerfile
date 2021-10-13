@@ -9,5 +9,7 @@ RUN \
 
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
 COPY ./ca-certs/root-ca.pem /usr/local/share/ca-certificates/root-ca.crt
+COPY ./service-certs/* /etc/nginx/certs/
+COPY ./service-keys/* /etc/nginx/private/
 
 RUN cat /usr/local/share/ca-certificates/root-ca.crt >> /etc/ssl/certs/ca-certificates.crt
