@@ -6,3 +6,5 @@ service-keys/*
 !service-keys/*.example
 .env
 docker-compose.yml
+nginx.conf
+

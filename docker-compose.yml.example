@@ -1,9 +1,18 @@
 version: "3"
 
+networks:
+  frontend:
+    driver: bridge
+  reverse-proxy-backend:
+    external: true
+
 services:
   reverse-proxy:
     container_name: reverse-proxy
     image: reverse-proxy
+    networks:
+      - frontend
+      - reverse-proxy-backend
     ports:
       - 443:443/tcp
     environment:

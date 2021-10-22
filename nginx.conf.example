@@ -12,7 +12,7 @@ server {
 
   location / {
     proxy_set_header Host $host;
-    proxy_pass https://192.168.0.2:5000;
+    proxy_pass https://a:443;
     proxy_ssl_protocols TLSv1.3;
     proxy_redirect off;
     proxy_cache_bypass $http_upgrade;
@@ -32,7 +32,7 @@ server {
 
   location / {
     proxy_set_header Host $host;
-    proxy_pass https://192.168.0.2:6000;
+    proxy_pass https://b:443;
     proxy_ssl_protocols TLSv1.3;
     proxy_redirect off;
     proxy_cache_bypass $http_upgrade;
