@@ -11,8 +11,9 @@ services:
     container_name: reverse-proxy
     image: reverse-proxy
     networks:
-      - frontend
-      - reverse-proxy-backend
+      frontend:
+      reverse-proxy-backend:
+        ipv4_address: ${BACKEND_IP_ADDRESS}
     ports:
       - 443:443/tcp
     environment:
