@@ -1,13 +1,5 @@
-# reverse-proxy
-Nginx reverse proxy container
+#!/usr/bin/env bash
 
-```
-./create-network.sh
-```
-
-OR
-
-```
 docker network create \
 --driver=bridge \
 --internal \
@@ -15,4 +7,4 @@ docker network create \
 --subnet=172.172.0.0/24 \
 --gateway=172.172.0.1 \
 reverse-proxy-backend
-```
+
