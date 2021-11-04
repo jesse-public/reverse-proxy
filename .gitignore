@@ -1,10 +1,5 @@
-ca-certs/*
-!ca-certs/*.example
-service-certs/*
-!service-certs/*.example
-service-keys/*
-!service-keys/*.example
+certs/*
+!certs/*.example
 .env
 docker-compose.yml
 nginx.conf
-
