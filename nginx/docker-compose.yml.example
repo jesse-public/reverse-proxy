@@ -9,7 +9,7 @@ networks:
 services:
   reverse-proxy:
     container_name: reverse-proxy
-    image: reverse-proxy
+    image: reverse-proxy-nginx
     networks:
       frontend:
       reverse-proxy-backend:

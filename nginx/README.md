@@ -1,4 +1,5 @@
 # reverse-proxy
+
 Nginx reverse proxy container
 
 ```
@@ -15,4 +16,10 @@ docker network create \
 --subnet=172.172.0.0/24 \
 --gateway=172.172.0.1 \
 reverse-proxy-backend
+```
+
+Then build the image
+
+```
+docker build . -t reverse-proxy-nginx
 ```
